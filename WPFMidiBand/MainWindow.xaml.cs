@@ -372,7 +372,7 @@ namespace WPFMidiBand
 
             if (btnReplayCheck)
             {
-                this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(Open));
+                this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(Replay));
             }
 
             //var fret = "||";
@@ -533,7 +533,7 @@ namespace WPFMidiBand
             this.dragStarted = false;
         }
 
-        private void Open()
+        private void Replay()
         {
             try
             {
